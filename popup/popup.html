@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../packages/materialize/css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="./popup.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boomark Hero</title>
+</head>
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large grey darken-3">
+    <i class="large material-icons">arrow_back</i>
+  </a>
+</div>
+<div class="popup">
+  <div class="navbar-fixed">
+    <nav class="grey lighten-3">
+      <div class="nav-wrapper">
+        <form>
+          <div class="input-field">
+            <input id="search" class="popup__header-input" type="search">
+            <label class="label-icon" for="search"><i class="material-icons header__search-icon">search</i></label>
+            <i id="search-close-icon" class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <ul class="collection bookmark-list"></ul>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col 12">
+          <h5 class="white-text">Thanks for using Bookmark Hero!</h5>
+          <p class="grey-text text-lighten-4">Let us know how we can improve our product:</p>
+          <a class="black-text text-lighten-3" target="__blank" rel="noopener noreferrer" href="mailto:get@tonypettigrew.dev">Email us!</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div id="popup-footer-copyright" class="container">
+      <p class="grey-text text-lighten-4 right">Created by Tony Pettigrew</p>
+      </div>
+    </div>
+  </footer>
+</div>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../packages/materialize/js/materialize.min.js"></script>
+  <script src="../packages/moment/moment.min.js"></script>
+  <script src="./popup.js"></script>
+</body>
+</html>

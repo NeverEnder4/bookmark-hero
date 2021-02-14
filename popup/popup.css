@@ -1,0 +1,28 @@
+.popup {
+  width: 500px;
+  height: auto;
+}
+
+.bookmark-list {
+  margin: 0;
+}
+
+.bookmark-list__item {
+  cursor: pointer;
+}
+
+.bookmark-list__item-link {
+  color: #ff5722;
+  font-weight: bold;
+  display: block;
+}
+
+.header__search-icon {
+  color: #212121 !important;
+}
+
+.folder-item__left-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
