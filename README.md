@@ -6,7 +6,7 @@ Bookmark Hero is a chrome extension for browsing and opening all bookmarks in a 
 
 Clone Github repo
 
-Open Chrome and navigate to the [Chrome extension manager](chrome://extensions/).
+Open Chrome and navigate to the Chrome extension manager (chrome://extensions/).
 
 Make sure developer mode is toggled on (top right corner).
 
