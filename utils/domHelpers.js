@@ -1,1 +1,0 @@
-export const createDomNode = (element) => document.createElement(element);
