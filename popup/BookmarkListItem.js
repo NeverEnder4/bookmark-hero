@@ -63,13 +63,12 @@ var BookmarkListItem = function() {
       bookmarkListItem.appendChild(dateModified);
     }
     
-    // Append URL
     if(bookmark.url) {
       bookmarkListItem.onclick = function(event){
         chrome.tabs.create({url: bookmark.url})
       }
     
-    
+      // Append URL
       const bookmarkUrl = document.createElement('a');
       bookmarkUrl.classList.add('text-darken-2', 'bookmark-list__item-link', 'truncate');
       bookmarkUrl.innerHTML = bookmark.url;

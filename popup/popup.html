@@ -18,7 +18,7 @@
       </a>
     </div>
     <div class="popup">
-      <div class="navbar-fixed">
+        <div class="navbar-fixed">
         <nav class="grey lighten-3">
           <div class="nav-wrapper">
             <form>
@@ -28,6 +28,29 @@
                 <i id="search-close-icon" class="material-icons">close</i>
               </div>
             </form>
+          </div>
+        </nav>
+      </div>
+      <div class="navbar-fixed">
+        <nav class="grey darken-4">
+          <div class="nav-wrapper breadcrumb-header__wrapper">
+            <div id="header-breadcrumb-container"
+              class="col s12 breadcrumb__container">
+            </div>
+            <div>
+              <a class='dropdown-trigger btn-small' href='#' data-target='add-new'>Add
+                New</a>
+      
+              <!-- Dropdown Structure -->
+              <ul id='add-new' class='dropdown-content'>
+                <li><a href="#!"><i class="material-icons">bookmark</i>Bookmark</a>
+                </li>
+                <li><a href="#!"><i
+                      class="material-icons">create_new_folder</i>Folder</a></li>
+              </ul>
+            </div>
+            <div id="breadcrumb-open-all-container" class="hide">
+            </div>
           </div>
         </nav>
       </div>

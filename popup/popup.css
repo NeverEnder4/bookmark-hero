@@ -52,3 +52,23 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.breadcrumb__container {
+  padding: 0 16px;
+}
+
+.breadcrumb__link {
+  font-size: 12px !important;
+}
+
+.breadcrumb-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+
+.breadcrumb-header__button-icon {
+  font-size: 1.2rem !important;
+  line-height: inherit !important;
+  margin-right: 8px !important;
+}
