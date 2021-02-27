@@ -34,7 +34,7 @@ var BookmarkListItem = function() {
     
       // Create open all button
       const openAllButton = document.createElement('button');
-      openAllButton.classList.add('waves-effect', 'waves-light', 'btn-small');
+      // openAllButton.classList.add('waves-effect', 'waves-light', 'btn-small');
       openAllButton.onclick = function(){
         const urls = bookmark.children.filter(child => child.url).map(child => child.url);
         urls.forEach(url => chrome.tabs.create({ url }));

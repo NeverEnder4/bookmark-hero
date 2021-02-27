@@ -12,6 +12,7 @@
 </head>
 <body>
   <main>
+  
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large grey darken-3">
         <i class="large material-icons">arrow_back</i>
@@ -37,16 +38,16 @@
             <div id="header-breadcrumb-container"
               class="col s12 breadcrumb__container">
             </div>
-            <div>
-              <a class='dropdown-trigger btn-small' href='#' data-target='add-new'>Add
-                New</a>
-      
+            <div class="header__dropdown-trigger">
+              <a class='dropdown-trigger' href='#' data-target='add-new'><i
+                  class="material-icons more-horiz-icon">more_horiz</i></a>
+
               <!-- Dropdown Structure -->
-              <ul id='add-new' class='dropdown-content'>
-                <li><a href="#!"><i class="material-icons">bookmark</i>Bookmark</a>
+              <ul id='add-new' class='dropdown-content header__dropdown-menu'>
+                <li><a href="#!"><i class="material-icons">bookmark</i>Add Bookmark</a>
                 </li>
                 <li><a href="#!"><i
-                      class="material-icons">create_new_folder</i>Folder</a></li>
+                      class="material-icons">create_new_folder</i>Add Folder</a></li>
               </ul>
             </div>
             <div id="breadcrumb-open-all-container" class="hide">

@@ -32,23 +32,9 @@ function renderBookmarkList(parentId) {
 
     Dom.clearChildNodes(breadcrumbOpenAllContainer);
     if(currentFolderBookmarks.length > 0) {
-      if(breadcrumbOpenAllContainer.classList.contains('hide'))breadcrumbOpenAllContainer.classList.remove('hide');
-      // Breadcrumb Open All Button
-      const breadcrumbOpenAllButton = Dom.createDomNode('button');
-      breadcrumbOpenAllButton.setAttribute('id', 'breadcrumb-open-all');
-      breadcrumbOpenAllButton.classList.add('waves-effect', 'waves-light', 'btn-small');
-
       const breadcrumbOpenAllIcon = Dom.createDomNode('i');
       breadcrumbOpenAllIcon.classList.add('material-icons', 'left', 'breadcrumb-header__button-icon');
       breadcrumbOpenAllIcon.innerHTML = "open_in_new";
-      breadcrumbOpenAllButton.append(breadcrumbOpenAllIcon, currentFolderBookmarks.length);
-      breadcrumbOpenAllButton.onclick = function() {
-        currentFolderBookmarks.forEach(bookmark => {
-          chrome.tabs.create({url: bookmark.url});
-        });
-      };
-
-      breadcrumbOpenAllContainer.appendChild(breadcrumbOpenAllButton);
     }
     
 
