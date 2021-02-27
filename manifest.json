@@ -1,7 +1,7 @@
 {
   "name": "Bookmark Hero",
   "description": "The bookmark manager that saves the day.",
-  "version": "0.0.0.1",
+  "version": "0.1.0",
   "manifest_version": 2,
   "icons": {
     "16": "./logo-16.png",
