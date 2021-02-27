@@ -34,7 +34,7 @@ var BookmarkListItem = function() {
     
       // Create open all button
       const openAllButton = document.createElement('button');
-      openAllButton.classList.add('waves-effect', 'waves-light', 'btn-small');
+      // openAllButton.classList.add('waves-effect', 'waves-light', 'btn-small');
       openAllButton.onclick = function(){
         const urls = bookmark.children.filter(child => child.url).map(child => child.url);
         urls.forEach(url => chrome.tabs.create({ url }));
@@ -63,13 +63,12 @@ var BookmarkListItem = function() {
       bookmarkListItem.appendChild(dateModified);
     }
     
-    // Append URL
     if(bookmark.url) {
       bookmarkListItem.onclick = function(event){
         chrome.tabs.create({url: bookmark.url})
       }
     
-    
+      // Append URL
       const bookmarkUrl = document.createElement('a');
       bookmarkUrl.classList.add('text-darken-2', 'bookmark-list__item-link', 'truncate');
       bookmarkUrl.innerHTML = bookmark.url;
